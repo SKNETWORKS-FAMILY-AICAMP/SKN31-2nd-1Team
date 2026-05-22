@@ -1,0 +1,1 @@
+streamlit run election_churn_app.py
