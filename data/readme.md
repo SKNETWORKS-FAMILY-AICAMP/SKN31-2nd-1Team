@@ -8,7 +8,7 @@
 
 하위 폴더 구조는 다음과 같습니다.
 
-📂 data
-├ 📂 processed             # 가공 후 데이터
-├ 📂 raw                   # 가공 전 데이터
-└ 📄 preprocess.py(예시)   # 데이터 전처리기 등의 프로그램
+📂 data<br>
+├ 📂 processed             # 가공 후 데이터<br>
+├ 📂 raw                   # 가공 전 데이터<br>
+└ 📄 preprocess.py(예시)   # 데이터 전처리기 등의 프로그램<br>
