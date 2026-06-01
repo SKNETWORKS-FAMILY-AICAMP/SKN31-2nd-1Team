@@ -1,1 +1,1 @@
-streamlit run election_churn_app.py
+streamlit run election_churn_app.pyp
