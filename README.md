@@ -83,7 +83,7 @@
 ---
 
 ## 데이터 파이프라인
-<img src="image/dataflow.jpg" width="1400" height="1700">
+<img src="image/dataflow.jpg" width="700" height="900">
 
 ---
 
