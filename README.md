@@ -56,22 +56,29 @@
 ## 기술 스택
 
 ### Frontend
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html&logoColor=white" alt="HTML"> 
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
+<span>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html&logoColor=white" alt="HTML"/> 
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS"/>
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+<img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" />
+</span>
 
 ### Backend 
+<span>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"> 
-
+</span>
 
 ### Data Processing & Analysis
+<span>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"> 
 <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"> 
 <img src="https://img.shields.io/badge/Folium-3F8F75?style=for-the-badge&logo=folium&logoColor=white" alt="Folium">
-
+</span>
 
 ### Web Scraping
+<span>
 <img src="https://img.shields.io/badge/BeautifulSoup-18F75?style=for-the-badge&logo=beautifulsoup&logoColor=white" alt="BeautifulSoup">
-
+</span>
 
 ---
 
