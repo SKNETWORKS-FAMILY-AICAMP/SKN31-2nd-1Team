@@ -1,0 +1,1783 @@
+{
+  "model_metrics": [
+    {
+      "model": "Lasso",
+      "RMSE": 1.2818,
+      "MAE": 1.0892,
+      "R2": 0.9836
+    },
+    {
+      "model": "Ridge",
+      "RMSE": 1.3363,
+      "MAE": 1.1453,
+      "R2": 0.9822
+    },
+    {
+      "model": "LightGBM",
+      "RMSE": 1.4149,
+      "MAE": 1.0785,
+      "R2": 0.98
+    }
+  ],
+  "feature_importance": [
+    {
+      "rank": 1,
+      "feature": "중년_50-60대_투표율_pct",
+      "importance": 3.0909148402052944,
+      "direction": 0.04066400584183835
+    },
+    {
+      "rank": 2,
+      "feature": "기권율_직전_pct",
+      "importance": 1.4602764637044923,
+      "direction": -0.007887472069034557
+    },
+    {
+      "rank": 3,
+      "feature": "고령_70대이상_투표율_pct",
+      "importance": 1.392667900556881,
+      "direction": 0.12285050284554265
+    },
+    {
+      "rank": 4,
+      "feature": "장년_30-40대_투표율_pct",
+      "importance": 1.2943444835818343,
+      "direction": -0.2077645361156355
+    },
+    {
+      "rank": 5,
+      "feature": "장년인구비율_pct",
+      "importance": 0.828346492500179,
+      "direction": 0.04594195585516672
+    },
+    {
+      "rank": 6,
+      "feature": "청년_20대_투표율_pct",
+      "importance": 0.5876215583255618,
+      "direction": 0.011633232165735337
+    },
+    {
+      "rank": 7,
+      "feature": "고령인구비율_pct",
+      "importance": 0.5194538697867422,
+      "direction": -0.046894428683335994
+    },
+    {
+      "rank": 8,
+      "feature": "중년인구비율_pct",
+      "importance": 0.24734192922257262,
+      "direction": 0.03205664194795763
+    },
+    {
+      "rank": 9,
+      "feature": "정치무관심률_pct",
+      "importance": 0.15916619633512763,
+      "direction": -0.010388922389177076
+    },
+    {
+      "rank": 10,
+      "feature": "청년인구비율_pct",
+      "importance": 0.15346814562444205,
+      "direction": -0.0019176614753195732
+    },
+    {
+      "rank": 11,
+      "feature": "효능감_평균",
+      "importance": 0.13024694183560181,
+      "direction": -0.014454050757871737
+    },
+    {
+      "rank": 12,
+      "feature": "세대격차_pct",
+      "importance": 0.12531839103311695,
+      "direction": 0.006495935299315192
+    },
+    {
+      "rank": 13,
+      "feature": "시도_target_enc",
+      "importance": 0.12141880285568518,
+      "direction": 0.014745532902873205
+    },
+    {
+      "rank": 14,
+      "feature": "기권의향률_pct",
+      "importance": 0.06307159194323984,
+      "direction": 0.0027738804368685377
+    },
+    {
+      "rank": 15,
+      "feature": "정책인지_평균",
+      "importance": 0.04586306752764079,
+      "direction": 0.008839325076789417
+    },
+    {
+      "rank": 16,
+      "feature": "공정선거인식_평균",
+      "importance": 0.026949449631185708,
+      "direction": 0.0033060591182866735
+    }
+  ],
+  "survey_weights": [
+    {
+      "feature": "정치무관심률_pct",
+      "importance": 0.15916619633512763,
+      "weight": 0.37424694694305094
+    },
+    {
+      "feature": "효능감_평균",
+      "importance": 0.13024694183560181,
+      "weight": 0.3062492002259735
+    },
+    {
+      "feature": "기권의향률_pct",
+      "importance": 0.06307159194323984,
+      "weight": 0.14830002391899852
+    },
+    {
+      "feature": "정책인지_평균",
+      "importance": 0.04586306752764079,
+      "weight": 0.10783767781648285
+    },
+    {
+      "feature": "공정선거인식_평균",
+      "importance": 0.026949449631185708,
+      "weight": 0.06336615109549412
+    }
+  ],
+  "age_contribution": [
+    {
+      "rank": 1,
+      "group": "18-29세",
+      "score": -9.295530567520327,
+      "기권의향률_pct": 14.7,
+      "정치무관심률_pct": 40.0,
+      "효능감_평균": -66.0,
+      "정책인지_평균": -46.4,
+      "공정선거인식_평균": -19.4
+    },
+    {
+      "rank": 2,
+      "group": "30대",
+      "score": -14.688081968360237,
+      "기권의향률_pct": 9.9,
+      "정치무관심률_pct": 30.8,
+      "효능감_평균": -65.7,
+      "정책인지_평균": -58.2,
+      "공정선거인식_평균": -20.3
+    },
+    {
+      "rank": 3,
+      "group": "70세 이상",
+      "score": -23.616996351068053,
+      "기권의향률_pct": 3.4,
+      "정치무관심률_pct": 16.2,
+      "효능감_평균": -68.3,
+      "정책인지_평균": -70.6,
+      "공정선거인식_평균": -26.1
+    },
+    {
+      "rank": 4,
+      "group": "40대",
+      "score": -26.298907992885827,
+      "기권의향률_pct": 6.6,
+      "정치무관심률_pct": 17.6,
+      "효능감_평균": -78.4,
+      "정책인지_평균": -69.7,
+      "공정선거인식_평균": -36.9
+    },
+    {
+      "rank": 5,
+      "group": "60대",
+      "score": -27.47554704382337,
+      "기권의향률_pct": 5.4,
+      "정치무관심률_pct": 14.6,
+      "효능감_평균": -73.1,
+      "정책인지_평균": -84.6,
+      "공정선거인식_평균": -35.2
+    },
+    {
+      "rank": 6,
+      "group": "50대",
+      "score": -28.703318872773707,
+      "기권의향률_pct": 5.5,
+      "정치무관심률_pct": 13.5,
+      "효능감_평균": -77.2,
+      "정책인지_평균": -77.9,
+      "공정선거인식_평균": -39.9
+    }
+  ],
+  "region_contribution": [
+    {
+      "rank": 1,
+      "group": "대구/경북",
+      "score": -19.131132413921055,
+      "기권의향률_pct": 6.9,
+      "정치무관심률_pct": 26.5,
+      "효능감_평균": -68.7,
+      "정책인지_평균": -69.6,
+      "공정선거인식_평균": -24.1
+    },
+    {
+      "rank": 2,
+      "group": "부산/울산/경남",
+      "score": -21.158953110105077,
+      "기권의향률_pct": 5.6,
+      "정치무관심률_pct": 25.3,
+      "효능감_평균": -72.0,
+      "정책인지_평균": -71.2,
+      "공정선거인식_평균": -27.3
+    },
+    {
+      "rank": 3,
+      "group": "강원/제주",
+      "score": -21.371884849927945,
+      "기권의향률_pct": 10.1,
+      "정치무관심률_pct": 18.3,
+      "효능감_평균": -67.5,
+      "정책인지_평균": -64.5,
+      "공정선거인식_평균": -33.0
+    },
+    {
+      "rank": 4,
+      "group": "인천/경기",
+      "score": -21.86354771879732,
+      "기권의향률_pct": 8.3,
+      "정치무관심률_pct": 21.8,
+      "효능감_평균": -72.5,
+      "정책인지_평균": -66.0,
+      "공정선거인식_평균": -30.5
+    },
+    {
+      "rank": 5,
+      "group": "대전/세종/충청",
+      "score": -23.035919263756956,
+      "기권의향률_pct": 9.0,
+      "정치무관심률_pct": 20.3,
+      "효능감_평균": -73.5,
+      "정책인지_평균": -70.2,
+      "공정선거인식_평균": -29.8
+    },
+    {
+      "rank": 6,
+      "group": "서울",
+      "score": -23.556420365105595,
+      "기권의향률_pct": 7.2,
+      "정치무관심률_pct": 20.2,
+      "효능감_평균": -74.8,
+      "정책인지_평균": -69.1,
+      "공정선거인식_평균": -28.8
+    },
+    {
+      "rank": 7,
+      "group": "광주/전라",
+      "score": -28.177534455669594,
+      "기권의향률_pct": 4.5,
+      "정치무관심률_pct": 13.4,
+      "효능감_평균": -75.3,
+      "정책인지_평균": -74.7,
+      "공정선거인식_평균": -43.3
+    }
+  ],
+  "predictions": [
+    {
+      "sido": "서울특별시",
+      "sigungu": "종로구",
+      "prev_rate_8th": 45.57,
+      "pred_rate_9th": 48.6
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "중구",
+      "prev_rate_8th": 46.16,
+      "pred_rate_9th": 47.39
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "용산구",
+      "prev_rate_8th": 47.36,
+      "pred_rate_9th": 48.87
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "성동구",
+      "prev_rate_8th": 44.54,
+      "pred_rate_9th": 47.4
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "광진구",
+      "prev_rate_8th": 48.6,
+      "pred_rate_9th": 49.86
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "동대문구",
+      "prev_rate_8th": 48.03,
+      "pred_rate_9th": 49.66
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "중랑구",
+      "prev_rate_8th": 49.05,
+      "pred_rate_9th": 49.77
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "성북구",
+      "prev_rate_8th": 46.66,
+      "pred_rate_9th": 48.83
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "강북구",
+      "prev_rate_8th": 50.25,
+      "pred_rate_9th": 48.15
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "도봉구",
+      "prev_rate_8th": 47.11,
+      "pred_rate_9th": 48.71
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "노원구",
+      "prev_rate_8th": 44.5,
+      "pred_rate_9th": 47.54
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "은평구",
+      "prev_rate_8th": 48.38,
+      "pred_rate_9th": 49.07
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "서대문구",
+      "prev_rate_8th": 45.91,
+      "pred_rate_9th": 48.58
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "마포구",
+      "prev_rate_8th": 46.07,
+      "pred_rate_9th": 48.15
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "양천구",
+      "prev_rate_8th": 44.59,
+      "pred_rate_9th": 47.32
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "강서구",
+      "prev_rate_8th": 48.29,
+      "pred_rate_9th": 49.67
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "구로구",
+      "prev_rate_8th": 46.82,
+      "pred_rate_9th": 48.63
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "금천구",
+      "prev_rate_8th": 50.28,
+      "pred_rate_9th": 50.6
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "영등포구",
+      "prev_rate_8th": 46.74,
+      "pred_rate_9th": 48.69
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "동작구",
+      "prev_rate_8th": 45.57,
+      "pred_rate_9th": 46.6
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "관악구",
+      "prev_rate_8th": 49.62,
+      "pred_rate_9th": 50.08
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "서초구",
+      "prev_rate_8th": 44.0,
+      "pred_rate_9th": 45.08
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "강남구",
+      "prev_rate_8th": 46.43,
+      "pred_rate_9th": 46.24
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "송파구",
+      "prev_rate_8th": 44.99,
+      "pred_rate_9th": 47.5
+    },
+    {
+      "sido": "서울특별시",
+      "sigungu": "강동구",
+      "prev_rate_8th": 46.15,
+      "pred_rate_9th": 47.89
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "중구",
+      "prev_rate_8th": 49.98,
+      "pred_rate_9th": 53.0
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "서구",
+      "prev_rate_8th": 49.64,
+      "pred_rate_9th": 50.25
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 49.51,
+      "pred_rate_9th": 51.31
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "영도구",
+      "prev_rate_8th": 49.46,
+      "pred_rate_9th": 50.06
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "부산진구",
+      "prev_rate_8th": 52.37,
+      "pred_rate_9th": 52.55
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "동래구",
+      "prev_rate_8th": 50.1,
+      "pred_rate_9th": 51.57
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "남구",
+      "prev_rate_8th": 47.8,
+      "pred_rate_9th": 49.79
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "북구",
+      "prev_rate_8th": 48.74,
+      "pred_rate_9th": 50.22
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "해운대구",
+      "prev_rate_8th": 51.24,
+      "pred_rate_9th": 51.2
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "기장군",
+      "prev_rate_8th": 55.33,
+      "pred_rate_9th": 54.32
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "사하구",
+      "prev_rate_8th": 52.94,
+      "pred_rate_9th": 52.23
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "금정구",
+      "prev_rate_8th": 48.68,
+      "pred_rate_9th": 47.72
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "강서구",
+      "prev_rate_8th": 54.37,
+      "pred_rate_9th": 55.93
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "연제구",
+      "prev_rate_8th": 48.9,
+      "pred_rate_9th": 50.73
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "수영구",
+      "prev_rate_8th": 52.05,
+      "pred_rate_9th": 52.4
+    },
+    {
+      "sido": "부산광역시",
+      "sigungu": "사상구",
+      "prev_rate_8th": 52.51,
+      "pred_rate_9th": 51.93
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "중구",
+      "prev_rate_8th": 57.09,
+      "pred_rate_9th": 59.36
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 55.9,
+      "pred_rate_9th": 54.64
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "서구",
+      "prev_rate_8th": 55.18,
+      "pred_rate_9th": 55.03
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "남구",
+      "prev_rate_8th": 57.63,
+      "pred_rate_9th": 58.31
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "북구",
+      "prev_rate_8th": 57.04,
+      "pred_rate_9th": 54.61
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "수성구",
+      "prev_rate_8th": 54.87,
+      "pred_rate_9th": 54.68
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "달서구",
+      "prev_rate_8th": 58.61,
+      "pred_rate_9th": 58.24
+    },
+    {
+      "sido": "대구광역시",
+      "sigungu": "달성군",
+      "prev_rate_8th": 57.44,
+      "pred_rate_9th": 55.74
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "중구",
+      "prev_rate_8th": 54.1,
+      "pred_rate_9th": 53.28
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 45.11,
+      "pred_rate_9th": 46.64
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "미추홀구",
+      "prev_rate_8th": 55.29,
+      "pred_rate_9th": 53.05
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "연수구",
+      "prev_rate_8th": 48.32,
+      "pred_rate_9th": 49.81
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "남동구",
+      "prev_rate_8th": 51.94,
+      "pred_rate_9th": 51.54
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "부평구",
+      "prev_rate_8th": 52.49,
+      "pred_rate_9th": 51.84
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "계양구",
+      "prev_rate_8th": 43.94,
+      "pred_rate_9th": 46.57
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "서구",
+      "prev_rate_8th": 53.76,
+      "pred_rate_9th": 53.1
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "강화군",
+      "prev_rate_8th": 38.1,
+      "pred_rate_9th": 41.04
+    },
+    {
+      "sido": "인천광역시",
+      "sigungu": "옹진군",
+      "prev_rate_8th": 32.82,
+      "pred_rate_9th": 29.8
+    },
+    {
+      "sido": "광주광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 57.48,
+      "pred_rate_9th": 55.86
+    },
+    {
+      "sido": "광주광역시",
+      "sigungu": "서구",
+      "prev_rate_8th": 60.32,
+      "pred_rate_9th": 55.54
+    },
+    {
+      "sido": "광주광역시",
+      "sigungu": "남구",
+      "prev_rate_8th": 60.31,
+      "pred_rate_9th": 57.54
+    },
+    {
+      "sido": "광주광역시",
+      "sigungu": "북구",
+      "prev_rate_8th": 62.04,
+      "pred_rate_9th": 58.38
+    },
+    {
+      "sido": "광주광역시",
+      "sigungu": "광산구",
+      "prev_rate_8th": 66.66,
+      "pred_rate_9th": 60.07
+    },
+    {
+      "sido": "대전광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 50.99,
+      "pred_rate_9th": 50.55
+    },
+    {
+      "sido": "대전광역시",
+      "sigungu": "중구",
+      "prev_rate_8th": 49.8,
+      "pred_rate_9th": 49.43
+    },
+    {
+      "sido": "대전광역시",
+      "sigungu": "서구",
+      "prev_rate_8th": 51.75,
+      "pred_rate_9th": 52.47
+    },
+    {
+      "sido": "대전광역시",
+      "sigungu": "유성구",
+      "prev_rate_8th": 48.42,
+      "pred_rate_9th": 50.07
+    },
+    {
+      "sido": "대전광역시",
+      "sigungu": "대덕구",
+      "prev_rate_8th": 50.16,
+      "pred_rate_9th": 50.54
+    },
+    {
+      "sido": "울산광역시",
+      "sigungu": "중구",
+      "prev_rate_8th": 45.66,
+      "pred_rate_9th": 47.71
+    },
+    {
+      "sido": "울산광역시",
+      "sigungu": "남구",
+      "prev_rate_8th": 49.7,
+      "pred_rate_9th": 51.96
+    },
+    {
+      "sido": "울산광역시",
+      "sigungu": "동구",
+      "prev_rate_8th": 44.39,
+      "pred_rate_9th": 45.25
+    },
+    {
+      "sido": "울산광역시",
+      "sigungu": "북구",
+      "prev_rate_8th": 49.65,
+      "pred_rate_9th": 50.55
+    },
+    {
+      "sido": "울산광역시",
+      "sigungu": "울주군",
+      "prev_rate_8th": 47.43,
+      "pred_rate_9th": 49.37
+    },
+    {
+      "sido": "세종특별자치시",
+      "sigungu": "세종특별자치시",
+      "prev_rate_8th": 48.76,
+      "pred_rate_9th": 48.18
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "수원시장안구",
+      "prev_rate_8th": 46.74,
+      "pred_rate_9th": 48.44
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "수원시권선구",
+      "prev_rate_8th": 50.67,
+      "pred_rate_9th": 50.36
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "수원시팔달구",
+      "prev_rate_8th": 51.68,
+      "pred_rate_9th": 49.92
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "수원시영통구",
+      "prev_rate_8th": 45.91,
+      "pred_rate_9th": 49.1
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "성남시수정구",
+      "prev_rate_8th": 48.82,
+      "pred_rate_9th": 49.71
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "성남시중원구",
+      "prev_rate_8th": 49.06,
+      "pred_rate_9th": 50.39
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "성남시분당구",
+      "prev_rate_8th": 37.97,
+      "pred_rate_9th": 39.39
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "의정부시",
+      "prev_rate_8th": 53.04,
+      "pred_rate_9th": 52.1
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "안양시만안구",
+      "prev_rate_8th": 46.85,
+      "pred_rate_9th": 48.7
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "안양시동안구",
+      "prev_rate_8th": 41.21,
+      "pred_rate_9th": 41.22
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "부천시",
+      "prev_rate_8th": 50.57,
+      "pred_rate_9th": 49.63
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "광명시",
+      "prev_rate_8th": 43.53,
+      "pred_rate_9th": 46.71
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "평택시",
+      "prev_rate_8th": 56.47,
+      "pred_rate_9th": 54.1
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "양주시",
+      "prev_rate_8th": 51.87,
+      "pred_rate_9th": 52.87
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "동두천시",
+      "prev_rate_8th": 50.97,
+      "pred_rate_9th": 50.12
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "안산시상록구",
+      "prev_rate_8th": 54.49,
+      "pred_rate_9th": 52.18
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "안산시단원구",
+      "prev_rate_8th": 54.32,
+      "pred_rate_9th": 53.28
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "고양시덕양구",
+      "prev_rate_8th": 47.79,
+      "pred_rate_9th": 48.88
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "고양시일산동구",
+      "prev_rate_8th": 48.8,
+      "pred_rate_9th": 49.76
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "고양시일산서구",
+      "prev_rate_8th": 46.53,
+      "pred_rate_9th": 48.67
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "과천시",
+      "prev_rate_8th": 34.58,
+      "pred_rate_9th": 36.52
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "의왕시",
+      "prev_rate_8th": 42.0,
+      "pred_rate_9th": 43.53
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "구리시",
+      "prev_rate_8th": 46.24,
+      "pred_rate_9th": 48.28
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "남양주시",
+      "prev_rate_8th": 50.95,
+      "pred_rate_9th": 50.19
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "오산시",
+      "prev_rate_8th": 56.28,
+      "pred_rate_9th": 55.4
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "화성시",
+      "prev_rate_8th": 52.65,
+      "pred_rate_9th": 53.26
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "시흥시",
+      "prev_rate_8th": 54.76,
+      "pred_rate_9th": 53.47
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "군포시",
+      "prev_rate_8th": 44.52,
+      "pred_rate_9th": 46.01
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "하남시",
+      "prev_rate_8th": 47.63,
+      "pred_rate_9th": 48.54
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "파주시",
+      "prev_rate_8th": 53.65,
+      "pred_rate_9th": 53.11
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "여주시",
+      "prev_rate_8th": 48.48,
+      "pred_rate_9th": 49.17
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "이천시",
+      "prev_rate_8th": 52.94,
+      "pred_rate_9th": 52.5
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "용인시처인구",
+      "prev_rate_8th": 52.8,
+      "pred_rate_9th": 50.69
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "용인시수지구",
+      "prev_rate_8th": 41.41,
+      "pred_rate_9th": 41.45
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "용인시기흥구",
+      "prev_rate_8th": 44.51,
+      "pred_rate_9th": 45.7
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "안성시",
+      "prev_rate_8th": 50.0,
+      "pred_rate_9th": 50.59
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "김포시",
+      "prev_rate_8th": 50.11,
+      "pred_rate_9th": 50.68
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "광주시",
+      "prev_rate_8th": 53.85,
+      "pred_rate_9th": 53.18
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "포천시",
+      "prev_rate_8th": 48.65,
+      "pred_rate_9th": 46.93
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "연천군",
+      "prev_rate_8th": 39.84,
+      "pred_rate_9th": 38.77
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "양평군",
+      "prev_rate_8th": 40.81,
+      "pred_rate_9th": 41.95
+    },
+    {
+      "sido": "경기도",
+      "sigungu": "가평군",
+      "prev_rate_8th": 40.55,
+      "pred_rate_9th": 39.87
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "춘천시",
+      "prev_rate_8th": 43.63,
+      "pred_rate_9th": 45.91
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "원주시",
+      "prev_rate_8th": 48.19,
+      "pred_rate_9th": 49.84
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "강릉시",
+      "prev_rate_8th": 45.13,
+      "pred_rate_9th": 47.88
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "동해시",
+      "prev_rate_8th": 45.31,
+      "pred_rate_9th": 48.15
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "삼척시",
+      "prev_rate_8th": 34.15,
+      "pred_rate_9th": 35.31
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "태백시",
+      "prev_rate_8th": 36.04,
+      "pred_rate_9th": 39.2
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "정선군",
+      "prev_rate_8th": 31.0,
+      "pred_rate_9th": 31.86
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "속초시",
+      "prev_rate_8th": 48.21,
+      "pred_rate_9th": 49.25
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "고성군",
+      "prev_rate_8th": 32.29,
+      "pred_rate_9th": 34.01
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "양양군",
+      "prev_rate_8th": 34.26,
+      "pred_rate_9th": 34.58
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "인제군",
+      "prev_rate_8th": 33.64,
+      "pred_rate_9th": 36.6
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "홍천군",
+      "prev_rate_8th": 39.19,
+      "pred_rate_9th": 40.0
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "횡성군",
+      "prev_rate_8th": 33.58,
+      "pred_rate_9th": 34.05
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "영월군",
+      "prev_rate_8th": 33.65,
+      "pred_rate_9th": 34.17
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "평창군",
+      "prev_rate_8th": 32.13,
+      "pred_rate_9th": 32.29
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "화천군",
+      "prev_rate_8th": 34.28,
+      "pred_rate_9th": 37.76
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "양구군",
+      "prev_rate_8th": 30.98,
+      "pred_rate_9th": 30.9
+    },
+    {
+      "sido": "강원특별자치도",
+      "sigungu": "철원군",
+      "prev_rate_8th": 39.48,
+      "pred_rate_9th": 37.9
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "청주시상당구",
+      "prev_rate_8th": 51.18,
+      "pred_rate_9th": 51.38
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "청주시서원구",
+      "prev_rate_8th": 51.46,
+      "pred_rate_9th": 51.49
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "청주시흥덕구",
+      "prev_rate_8th": 56.04,
+      "pred_rate_9th": 54.65
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "청주시청원구",
+      "prev_rate_8th": 54.7,
+      "pred_rate_9th": 53.95
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "충주시",
+      "prev_rate_8th": 50.44,
+      "pred_rate_9th": 51.54
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "제천시",
+      "prev_rate_8th": 45.65,
+      "pred_rate_9th": 46.84
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "단양군",
+      "prev_rate_8th": 32.17,
+      "pred_rate_9th": 32.56
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "영동군",
+      "prev_rate_8th": 33.98,
+      "pred_rate_9th": 33.88
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "보은군",
+      "prev_rate_8th": 32.52,
+      "pred_rate_9th": 33.13
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "옥천군",
+      "prev_rate_8th": 35.45,
+      "pred_rate_9th": 37.55
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "음성군",
+      "prev_rate_8th": 50.11,
+      "pred_rate_9th": 49.74
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "진천군",
+      "prev_rate_8th": 51.83,
+      "pred_rate_9th": 50.91
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "괴산군",
+      "prev_rate_8th": 31.59,
+      "pred_rate_9th": 32.54
+    },
+    {
+      "sido": "충청북도",
+      "sigungu": "증평군",
+      "prev_rate_8th": 45.67,
+      "pred_rate_9th": 48.01
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "천안시서북구",
+      "prev_rate_8th": 57.84,
+      "pred_rate_9th": 56.49
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "천안시동남구",
+      "prev_rate_8th": 57.66,
+      "pred_rate_9th": 54.4
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "공주시",
+      "prev_rate_8th": 43.97,
+      "pred_rate_9th": 45.34
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "보령시",
+      "prev_rate_8th": 39.1,
+      "pred_rate_9th": 37.89
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "아산시",
+      "prev_rate_8th": 55.59,
+      "pred_rate_9th": 57.0
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "서산시",
+      "prev_rate_8th": 51.43,
+      "pred_rate_9th": 49.89
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "태안군",
+      "prev_rate_8th": 37.38,
+      "pred_rate_9th": 37.7
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "금산군",
+      "prev_rate_8th": 35.91,
+      "pred_rate_9th": 37.21
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "논산시",
+      "prev_rate_8th": 46.15,
+      "pred_rate_9th": 46.47
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "계룡시",
+      "prev_rate_8th": 44.64,
+      "pred_rate_9th": 45.41
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "당진시",
+      "prev_rate_8th": 53.66,
+      "pred_rate_9th": 51.09
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "부여군",
+      "prev_rate_8th": 36.44,
+      "pred_rate_9th": 37.89
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "서천군",
+      "prev_rate_8th": 36.16,
+      "pred_rate_9th": 37.77
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "홍성군",
+      "prev_rate_8th": 45.74,
+      "pred_rate_9th": 46.66
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "청양군",
+      "prev_rate_8th": 29.53,
+      "pred_rate_9th": 30.38
+    },
+    {
+      "sido": "충청남도",
+      "sigungu": "예산군",
+      "prev_rate_8th": 43.87,
+      "pred_rate_9th": 46.5
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "전주시완산구",
+      "prev_rate_8th": 59.77,
+      "pred_rate_9th": 55.01
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "전주시덕진구",
+      "prev_rate_8th": 59.43,
+      "pred_rate_9th": 56.43
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "군산시",
+      "prev_rate_8th": 61.27,
+      "pred_rate_9th": 56.96
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "익산시",
+      "prev_rate_8th": 55.14,
+      "pred_rate_9th": 53.2
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "정읍시",
+      "prev_rate_8th": 41.82,
+      "pred_rate_9th": 43.29
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "남원시",
+      "prev_rate_8th": 35.49,
+      "pred_rate_9th": 38.31
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "김제시",
+      "prev_rate_8th": 41.03,
+      "pred_rate_9th": 43.54
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "완주군",
+      "prev_rate_8th": 47.11,
+      "pred_rate_9th": 48.37
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "진안군",
+      "prev_rate_8th": 26.59,
+      "pred_rate_9th": 25.66
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "무주군",
+      "prev_rate_8th": 23.55,
+      "pred_rate_9th": 23.99
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "장수군",
+      "prev_rate_8th": 24.72,
+      "pred_rate_9th": 24.71
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "임실군",
+      "prev_rate_8th": 27.56,
+      "pred_rate_9th": 24.86
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "순창군",
+      "prev_rate_8th": 22.19,
+      "pred_rate_9th": 23.74
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "고창군",
+      "prev_rate_8th": 27.15,
+      "pred_rate_9th": 28.1
+    },
+    {
+      "sido": "전북특별자치도",
+      "sigungu": "부안군",
+      "prev_rate_8th": 39.73,
+      "pred_rate_9th": 40.74
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "목포시",
+      "prev_rate_8th": 47.13,
+      "pred_rate_9th": 49.05
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "여수시",
+      "prev_rate_8th": 53.93,
+      "pred_rate_9th": 53.62
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "순천시",
+      "prev_rate_8th": 45.56,
+      "pred_rate_9th": 48.11
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "나주시",
+      "prev_rate_8th": 46.4,
+      "pred_rate_9th": 48.15
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "광양시",
+      "prev_rate_8th": 45.41,
+      "pred_rate_9th": 47.04
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "담양군",
+      "prev_rate_8th": 36.22,
+      "pred_rate_9th": 36.59
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "장성군",
+      "prev_rate_8th": 31.12,
+      "pred_rate_9th": 30.73
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "곡성군",
+      "prev_rate_8th": 26.01,
+      "pred_rate_9th": 26.47
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "구례군",
+      "prev_rate_8th": 23.77,
+      "pred_rate_9th": 24.39
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "고흥군",
+      "prev_rate_8th": 22.16,
+      "pred_rate_9th": 23.57
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "보성군",
+      "prev_rate_8th": 34.09,
+      "pred_rate_9th": 34.63
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "화순군",
+      "prev_rate_8th": 41.34,
+      "pred_rate_9th": 42.31
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "장흥군",
+      "prev_rate_8th": 28.46,
+      "pred_rate_9th": 30.15
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "강진군",
+      "prev_rate_8th": 27.22,
+      "pred_rate_9th": 28.21
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "완도군",
+      "prev_rate_8th": 30.2,
+      "pred_rate_9th": 32.79
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "해남군",
+      "prev_rate_8th": 40.69,
+      "pred_rate_9th": 42.09
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "진도군",
+      "prev_rate_8th": 23.67,
+      "pred_rate_9th": 23.91
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "영암군",
+      "prev_rate_8th": 38.76,
+      "pred_rate_9th": 38.29
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "무안군",
+      "prev_rate_8th": 44.82,
+      "pred_rate_9th": 47.21
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "영광군",
+      "prev_rate_8th": 29.76,
+      "pred_rate_9th": 29.53
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "함평군",
+      "prev_rate_8th": 35.78,
+      "pred_rate_9th": 39.28
+    },
+    {
+      "sido": "전라남도",
+      "sigungu": "신안군",
+      "prev_rate_8th": 25.08,
+      "pred_rate_9th": 24.52
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "포항시북구",
+      "prev_rate_8th": 54.2,
+      "pred_rate_9th": 53.84
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "포항시남구",
+      "prev_rate_8th": 54.03,
+      "pred_rate_9th": 53.17
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "울릉군",
+      "prev_rate_8th": 18.52,
+      "pred_rate_9th": 22.53
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "경주시",
+      "prev_rate_8th": 50.27,
+      "pred_rate_9th": 47.67
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "김천시",
+      "prev_rate_8th": 44.16,
+      "pred_rate_9th": 47.14
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "안동시",
+      "prev_rate_8th": 45.14,
+      "pred_rate_9th": 46.22
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "구미시",
+      "prev_rate_8th": 57.17,
+      "pred_rate_9th": 54.66
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "영주시",
+      "prev_rate_8th": 36.79,
+      "pred_rate_9th": 39.27
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "영천시",
+      "prev_rate_8th": 43.14,
+      "pred_rate_9th": 45.8
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "상주시",
+      "prev_rate_8th": 36.02,
+      "pred_rate_9th": 37.84
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "문경시",
+      "prev_rate_8th": 37.06,
+      "pred_rate_9th": 38.26
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "예천군",
+      "prev_rate_8th": 37.98,
+      "pred_rate_9th": 38.81
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "경산시",
+      "prev_rate_8th": 56.62,
+      "pred_rate_9th": 56.17
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "청도군",
+      "prev_rate_8th": 29.19,
+      "pred_rate_9th": 29.58
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "고령군",
+      "prev_rate_8th": 37.24,
+      "pred_rate_9th": 36.68
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "성주군",
+      "prev_rate_8th": 32.48,
+      "pred_rate_9th": 33.14
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "칠곡군",
+      "prev_rate_8th": 56.31,
+      "pred_rate_9th": 56.55
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "군위군",
+      "prev_rate_8th": 19.08,
+      "pred_rate_9th": 24.27
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "의성군",
+      "prev_rate_8th": 25.95,
+      "pred_rate_9th": 26.5
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "청송군",
+      "prev_rate_8th": 26.08,
+      "pred_rate_9th": 27.17
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "영양군",
+      "prev_rate_8th": 22.71,
+      "pred_rate_9th": 22.83
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "영덕군",
+      "prev_rate_8th": 32.88,
+      "pred_rate_9th": 35.8
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "봉화군",
+      "prev_rate_8th": 32.55,
+      "pred_rate_9th": 32.16
+    },
+    {
+      "sido": "경상북도",
+      "sigungu": "울진군",
+      "prev_rate_8th": 32.69,
+      "pred_rate_9th": 35.36
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창원시의창구",
+      "prev_rate_8th": 48.79,
+      "pred_rate_9th": 49.51
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창원시성산구",
+      "prev_rate_8th": 46.98,
+      "pred_rate_9th": 49.4
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창원시마산합포구",
+      "prev_rate_8th": 46.49,
+      "pred_rate_9th": 46.19
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창원시마산회원구",
+      "prev_rate_8th": 46.5,
+      "pred_rate_9th": 48.69
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창원시진해구",
+      "prev_rate_8th": 52.91,
+      "pred_rate_9th": 53.13
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "진주시",
+      "prev_rate_8th": 46.89,
+      "pred_rate_9th": 49.94
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "통영시",
+      "prev_rate_8th": 42.26,
+      "pred_rate_9th": 41.81
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "고성군",
+      "prev_rate_8th": 32.27,
+      "pred_rate_9th": 32.14
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "사천시",
+      "prev_rate_8th": 40.89,
+      "pred_rate_9th": 41.96
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "김해시",
+      "prev_rate_8th": 54.24,
+      "pred_rate_9th": 53.98
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "밀양시",
+      "prev_rate_8th": 45.29,
+      "pred_rate_9th": 46.77
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "거제시",
+      "prev_rate_8th": 48.65,
+      "pred_rate_9th": 48.74
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "의령군",
+      "prev_rate_8th": 24.96,
+      "pred_rate_9th": 23.82
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "함안군",
+      "prev_rate_8th": 40.74,
+      "pred_rate_9th": 41.08
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "창녕군",
+      "prev_rate_8th": 35.86,
+      "pred_rate_9th": 38.07
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "양산시",
+      "prev_rate_8th": 52.99,
+      "pred_rate_9th": 53.01
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "하동군",
+      "prev_rate_8th": 26.16,
+      "pred_rate_9th": 24.93
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "남해군",
+      "prev_rate_8th": 29.37,
+      "pred_rate_9th": 29.94
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "함양군",
+      "prev_rate_8th": 24.36,
+      "pred_rate_9th": 24.73
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "산청군",
+      "prev_rate_8th": 30.36,
+      "pred_rate_9th": 31.42
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "거창군",
+      "prev_rate_8th": 34.17,
+      "pred_rate_9th": 35.25
+    },
+    {
+      "sido": "경상남도",
+      "sigungu": "합천군",
+      "prev_rate_8th": 30.61,
+      "pred_rate_9th": 29.83
+    },
+    {
+      "sido": "제주특별자치도",
+      "sigungu": "제주시",
+      "prev_rate_8th": 47.1,
+      "pred_rate_9th": 48.9
+    },
+    {
+      "sido": "제주특별자치도",
+      "sigungu": "서귀포시",
+      "prev_rate_8th": 46.32,
+      "pred_rate_9th": 49.28
+    }
+  ]
+}
