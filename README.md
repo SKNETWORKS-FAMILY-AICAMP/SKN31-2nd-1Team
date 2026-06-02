@@ -102,7 +102,7 @@
 
 ## 데이터 파이프라인
 <img src="image/dataflow.jpg" width="720" height="850">
-<span>자료 : <a href="https://www.notion.so/Feature-370db08ed97780edae09d6fc808a846d?source=copy_link" target="_blank">Notion - Feature명세서</a></span>
+<span>자료 : <a href="https://www.notion.so/Feature-370db08ed97780edae09d6fc808a846d?source=copy_link" rel="noreferrer noopener" target="_blank">Notion - Feature명세서</a></span>
 
 
 ## 요구사항 명세
