@@ -50,7 +50,7 @@
 
 ### 프로젝트 구조
 
-
+```
 📂  root
 ├ 📄 README.md
 ├ 📄 .gitignore
@@ -68,7 +68,7 @@
 ├📂 web_back
 ├📂 web_front
 ├📂 산출물
-
+```
 ---
 
 ## 기술 스택
