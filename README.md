@@ -101,9 +101,8 @@
 ---
 
 ## 데이터 파이프라인
-```
-<img src="image/dataflow.jpg" width="700" height="900">
-```
+<img src="image/dataflow.jpg" width="720" height="850">
+
 ---
 
 ## 요구사항 명세
