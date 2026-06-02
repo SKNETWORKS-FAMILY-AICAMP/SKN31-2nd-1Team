@@ -12,7 +12,7 @@
 | :---: | :---: | :---: | :---: | :---: |
 | <a href="https://github.com/Uranium10"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/kimjae9360"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/MintRinne"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/Jinxxxok"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> |  <a href="https://github.com/sxoxyn"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> |
 |<img src="image/dm.png" width="150" height="150"> | <img src="image/jw.png" width="150" height="150"> | <img src="image/hr.png" width="150" height="150"> | <img src="image/hj.png" width="150" height="150"> | <img src="image/sy.png" width="150" height="150"> |
-| <b>PM</b>     |  |    |  |    | | 
+| <b>PM</b>     |<b>데이터 전처리</b>  |<b>데이터 전처리</b>   |<b>ML/DL</b>  | <b>ML/DL</b>   | | 
 
 </div>
 ---
