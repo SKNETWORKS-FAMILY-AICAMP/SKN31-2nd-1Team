@@ -50,6 +50,24 @@
 
 ### 프로젝트 구조
 
+📂  root
+├ 📄 README.md
+├ 📄 .gitignore
+┃
+├ 📂 data
+┃├ 📂 processed  # 가공 후 데이터
+┃├ 📂 raw  # 가공 전 데이터
+┃└ 📄 preprocess.py   # 프로그램
+├ 📂 DL  # 당선 예측 모델
+├ 📂 image
+├📂 ML
+┃├ 📂 notebooks # 주피터
+┃├ 📂 models  # 저장된 모델
+┃└ 📄 requirements.txt  # 필요패키지 
+├📂 web_back
+├📂 web_front
+├📂 산출물
+
 
 ---
 
