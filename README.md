@@ -82,8 +82,8 @@
 
 ---
 
-## 수집 데이터 설명
-<img src="image/data_pipline.jpg" width="1400" height="1700">
+## 데이터 파이프라인
+<img src="image/dataflow.jpg" width="1400" height="1700">
 
 ---
 
