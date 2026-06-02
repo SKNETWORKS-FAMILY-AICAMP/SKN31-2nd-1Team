@@ -1,19 +1,22 @@
 # SKN31-2nd-1Team
-<img src="team_poster.png" width="450" height="600">
+<div align="center">
+    <img src="image/team_poster.png" width="450" height="600"></td>
+
 
 ## 팀 및 팀원 소개
 
-### 팀 명
-### - 유권자들
+# 유권자들
 
-### 팀원
+
 | 김동민 | 김재원 | 박하린 | 안혁진 | 전서연 
 | :---: | :---: | :---: | :---: | :---: |
 | <a href="https://github.com/Uranium10"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/kimjae9360"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/MintRinne"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> | <a href="https://github.com/Jinxxxok"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> |  <a href="https://github.com/sxoxyn"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> |
-|<img src="" width="150" height="150"> | <img src="" width="150" height="150"> | <img src="" width="150" height="150"> | <img src="" width="150" height="150"> | <img src="" width="150" height="150"> |
-| <b>PM</b>    |  |    |  |    | | 
+|<img src="image/dm.png" width="150" height="150"> | <img src="image/jw.png" width="150" height="150"> | <img src="image/hr.png" width="150" height="150"> | <img src="image/hj.png" width="150" height="150"> | <img src="image/sy.png" width="150" height="150"> |
+| <b>PM</b>     |  |    |  |    | | 
 
+</div>
 ---
+
 
 ## 프로젝트 개요
 
