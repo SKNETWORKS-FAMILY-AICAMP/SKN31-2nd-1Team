@@ -165,10 +165,10 @@
 <img src="image/연령대기권의향.png">
 <img src="image/연령대기권의식지표.png">
 
-### 5) 9회 전국 예측
+### 4) 9회 전국 예측
 <img src="image/9회전국예측.png">
 
-### 6) 여론조사
+### 5) 여론조사
 <img src="image/여론조사1.png">
 <img src="image/여론조사2.png">
 
