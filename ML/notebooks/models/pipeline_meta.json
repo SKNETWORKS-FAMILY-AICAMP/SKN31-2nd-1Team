@@ -1,0 +1,83 @@
+{
+  "feature_cols": [
+    "기권율_직전_pct",
+    "청년_20대_투표율_pct",
+    "장년_30-40대_투표율_pct",
+    "중년_50-60대_투표율_pct",
+    "고령_70대이상_투표율_pct",
+    "세대격차_pct",
+    "청년인구비율_pct",
+    "장년인구비율_pct",
+    "중년인구비율_pct",
+    "고령인구비율_pct",
+    "기권의향률_pct",
+    "정치무관심률_pct",
+    "효능감_평균",
+    "정책인지_평균",
+    "공정선거인식_평균",
+    "시도_target_enc"
+  ],
+  "sido_target_enc": {
+    "강원특별자치도": 37.507777777777775,
+    "경기도": 48.20238095238095,
+    "경상남도": 40.07909090909091,
+    "경상북도": 38.26083333333333,
+    "광주광역시": 61.362,
+    "대구광역시": 56.72,
+    "대전광역시": 50.224000000000004,
+    "부산광역시": 50.85125,
+    "서울특별시": 46.866800000000005,
+    "세종특별자치시": 48.76,
+    "울산광역시": 47.366,
+    "인천광역시": 47.587,
+    "전라남도": 35.344545454545454,
+    "전북특별자치도": 39.50333333333333,
+    "제주특별자치도": 46.71,
+    "충청남도": 44.691874999999996,
+    "충청북도": 44.485
+  },
+  "reverse_cols": [
+    "효능감_평균",
+    "정책인지_평균",
+    "공정선거인식_평균"
+  ],
+  "best_params": {
+    "lasso": {
+      "lasso__alpha": 0.05
+    },
+    "ridge": {
+      "ridge__alpha": 5.0
+    },
+    "lgbm": {
+      "lgbmregressor__subsample": 0.8,
+      "lgbmregressor__reg_lambda": 0.0,
+      "lgbmregressor__reg_alpha": 0.0,
+      "lgbmregressor__num_leaves": 31,
+      "lgbmregressor__n_estimators": 200,
+      "lgbmregressor__min_child_samples": 10,
+      "lgbmregressor__max_depth": 4,
+      "lgbmregressor__learning_rate": 0.05,
+      "lgbmregressor__colsample_bytree": 0.6
+    }
+  },
+  "val_metrics": {
+    "lasso": {
+      "model": "Lasso",
+      "RMSE": 1.2818,
+      "MAE": 1.0892,
+      "R2": 0.9836
+    },
+    "ridge": {
+      "model": "Ridge",
+      "RMSE": 1.3363,
+      "MAE": 1.1453,
+      "R2": 0.9822
+    },
+    "lgbm": {
+      "model": "LightGBM",
+      "RMSE": 1.4149,
+      "MAE": 1.0785,
+      "R2": 0.98
+    }
+  }
+}

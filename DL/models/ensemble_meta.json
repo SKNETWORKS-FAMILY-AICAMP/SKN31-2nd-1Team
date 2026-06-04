@@ -1,0 +1,46 @@
+{
+  "ensemble_weights": {
+    "mlp": 0.6,
+    "lr": 0.4
+  },
+  "loo_accuracy": {
+    "lr": 0.9167,
+    "mlp": 0.9167
+  },
+  "model_architecture": {
+    "tinymlp": "Linear(1→8, Tanh) → Dropout(0.5) → Linear(8→1)",
+    "loss": "BCEWithLogitsLoss",
+    "optimizer": "Adam(lr=0.01, weight_decay=0.05)",
+    "epochs": 800
+  },
+  "platt_scaling": {
+    "method": "LOO MLP 확률 → LogisticRegression(C=1.0) 보정"
+  },
+  "feature": "poll_gap (민주계 - 국힘계 여론조사 격차, %p)",
+  "training_data": {
+    "samples": 24,
+    "elections": [
+      "7회(2018)",
+      "8회(2022)"
+    ],
+    "class_balance": "민주계 12 / 국힘계 12"
+  },
+  "contest_regions_9th": [
+    {
+      "region": "Seoul",
+      "poll_gap": 3.9
+    },
+    {
+      "region": "Daegu",
+      "poll_gap": 10.1
+    },
+    {
+      "region": "Jeonbuk",
+      "poll_gap": 3.0
+    },
+    {
+      "region": "Gyeongnam",
+      "poll_gap": 0.2
+    }
+  ]
+}
