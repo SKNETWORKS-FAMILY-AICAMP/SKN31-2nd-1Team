@@ -125,11 +125,24 @@ function SupportSection({ region, round, setSupportTab, supportTab }) {
 
   if (!url) return <div className="cu-animate"><SectionHeader title="지지율 분석" /><div style={{ color: 'var(--text-muted)', fontSize: '0.8rem', textAlign: 'center', padding: '20px 16px' }}>회차를 선택하세요.</div></div>;
 
-  // 💡 [핵심] 도넛 차트 중앙에 들어갈 '1위 우세 정당' 동적 계산
   const topIdx = data?.total ? data.total.indexOf(Math.max(...data.total)) : 0;
   const topParty = data ? (data.parties[topIdx] === '보수정당' ? (data.party_labels?.['보수정당'] ?? '보수정당') : data.parties[topIdx]) : '';
   const topColor = data ? data.colors[topIdx] : '';
   const topRate = data ? data.total[topIdx] : 0;
+
+  // 💡 [수정] 탭은 항상 3개를 모두 보여줍니다.
+  const tabMenus = [ 
+    { key: 'total', label: '전체' },
+    { key: 'gender', label: '성별' }, 
+    { key: 'age', label: '연령별' } 
+  ];
+
+  // 안내문구 컴포넌트
+  const EmptyState = () => (
+    <div style={{ textAlign: 'center', padding: '40px 10px', color: 'var(--text-muted)', fontSize: '0.75rem', background: 'rgba(255,255,255,0.02)', borderRadius: '8px' }}>
+      🗳️ 과거 선거(7·8회)는 비밀투표 원칙에 따라<br/>성별 및 연령별 실제 개표 데이터를 제공하지 않습니다.
+    </div>
+  );
 
   return (
     <div className="cu-animate">
@@ -139,24 +152,19 @@ function SupportSection({ region, round, setSupportTab, supportTab }) {
         {data && (
           <>
             <div className="cu-tab-row">
-              {[
-                { key: 'total', label: '전체' }, 
-                ...(round === '9회' ? [{ key: 'gender', label: '성별' }, { key: 'age', label: '연령별' }] : [])
-              ].map(t => (
+              {tabMenus.map(t => (
                 <button key={t.key} className={`cu-tab-btn${supportTab === t.key ? ' active' : ''}`} onClick={() => setSupportTab(t.key)}>{t.label}</button>
               ))}
             </div>
+            
             {supportTab === 'total' && (
               <div className="cu-support-body">
                 <div className="cu-donut-wrap">
                   <DonutChart values={data.total} colors={data.colors} size={200} thickness={26} />
-                  
-                  {/* 💡 계산된 1위 정당 데이터를 렌더링 (이름이 너무 길면 예쁘게 축약) */}
                   <div className="cu-donut-center">
                     <span className="cu-dc-val" style={{ color: topColor }}>{topRate.toFixed(1)}%</span>
                     <span className="cu-dc-label">{topParty.replace('더불어민주당', '민주당').replace('자유한국당', '한국당')}</span>
                   </div>
-
                 </div>
                 <div className="cu-legend">
                   {data.parties.map((p, i) => (
@@ -169,31 +177,39 @@ function SupportSection({ region, round, setSupportTab, supportTab }) {
                 </div>
               </div>
             )}
+
+            {/* 💡 [수정] 9회차면 차트를 보여주고, 아니면 EmptyState 안내문을 띄웁니다 */}
             {supportTab === 'gender' && (
-              <div className="cu-bar-group">
-                {data.by_gender.map(g => (
-                  <div key={g.gender} className="cu-bar-row">
-                    <span className="cu-bar-label">{g.gender}</span>
-                    <div className="cu-bar-stack">
-                      {data.parties.map((p, i) => <div key={p} className="cu-bar-seg" style={{ width: `${g.values[i]}%`, background: data.colors[i], opacity: i === 2 ? 0.6 : 1 }} />)}
+              round === '9회' ? (
+                <div className="cu-bar-group">
+                  {data.by_gender.map(g => (
+                    <div key={g.gender} className="cu-bar-row">
+                      <span className="cu-bar-label">{g.gender}</span>
+                      <div className="cu-bar-stack">
+                        {data.parties.map((p, i) => <div key={p} className="cu-bar-seg" style={{ width: `${g.values[i]}%`, background: data.colors[i], opacity: i === 2 ? 0.6 : 1 }} />)}
+                      </div>
+                      <span className="cu-bar-pct">{g.values[0].toFixed(1)}%</span>
                     </div>
-                    <span className="cu-bar-pct">{g.values[0].toFixed(1)}%</span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ) : <EmptyState />
             )}
+
+            {/* 💡 [수정] 9회차면 차트를 보여주고, 아니면 EmptyState 안내문을 띄웁니다 */}
             {supportTab === 'age' && (
-              <div className="cu-bar-group">
-                {data.by_age.map(a => (
-                  <div key={a.age} className="cu-bar-row">
-                    <span className="cu-bar-label" style={{ fontSize: '0.58rem' }}>{a.age.replace('대 이하', '대↓').replace('대 이상', '대↑')}</span>
-                    <div className="cu-bar-stack">
-                      {data.parties.map((p, i) => <div key={p} className="cu-bar-seg" style={{ width: `${a.values[i]}%`, background: data.colors[i], opacity: i === 2 ? 0.6 : 1 }} />)}
+              round === '9회' ? (
+                <div className="cu-bar-group">
+                  {data.by_age.map(a => (
+                    <div key={a.age} className="cu-bar-row">
+                      <span className="cu-bar-label" style={{ fontSize: '0.58rem' }}>{a.age.replace('대 이하', '대↓').replace('대 이상', '대↑')}</span>
+                      <div className="cu-bar-stack">
+                        {data.parties.map((p, i) => <div key={p} className="cu-bar-seg" style={{ width: `${a.values[i]}%`, background: data.colors[i], opacity: i === 2 ? 0.6 : 1 }} />)}
+                      </div>
+                      <span className="cu-bar-pct">{a.values[0].toFixed(1)}%</span>
                     </div>
-                    <span className="cu-bar-pct">{a.values[0].toFixed(1)}%</span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ) : <EmptyState />
             )}
           </>
         )}
