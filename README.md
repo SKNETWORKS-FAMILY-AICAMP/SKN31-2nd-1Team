@@ -15,6 +15,17 @@
 </div>
 
 ---
+## 목차
+> 1. 프로젝트 개요 
+> 2. 기술 스택  
+> 3. 프로젝트 WBS  
+> 4. 프로젝트 구조  
+> 5. 데이터 파이프라인  
+> 6. 요구사항 명세(기능/비기능)  
+> 7. 수행 결과  
+>8. 회고
+
+---
 
 ## 1. 프로젝트 개요
 
@@ -44,7 +55,32 @@
 : 이탈 위험이 높게 예측된 지역을 중심으로 '찾아가는 사전투표소 운영', '선거 공보물 가독성 개선', 
  '취약 지역 집중 가로수 현수막 및 모바일 알림톡 발송' 등의 맞춤형 행정 서비스를 제안
 
-## 1.5 프로젝트 구조
+---
+
+## 2. 기술 스택
+| | |
+|:-|:-|
+|**Web App & Core**|![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff) ![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff)|
+|**Data Analysis**|![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff) ![Requests](https://img.shields.io/badge/Requests-43B02A?logo=Requests&logoColor=fff)|
+|**Machine Learning**|![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)  ![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=flat) ![Lasso](https://img.shields.io/badge/Lasso-84569B?style=flat) ![Ridge](https://img.shields.io/badge/Ridge-007FFF?style=flat) ![Logistic Regression](https://img.shields.io/badge/LogisticRegression-4C64FF?style=flat)|
+|**Visualization**|![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white) ![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff) ![Seaborn](https://img.shields.io/badge/Seaborn-4EAEAA?logo=python&logoColor=fff)|
+|**Dev Tools**|![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=visualstudiocode&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-ffffff?logo=Jupyter) ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)|
+
+---
+
+## 3. 프로젝트 WBS
+
+| 구분 | 주요 작업 내용 | 담당자 | 일정 |
+|:-:|:-|:-:|:-:|
+| **기획** | 요구사항 정의 및 UI/UX 설계 | 전체 | 05/26 ~ 05/27 |
+| **데이터 전처리** | RAW DATA(개표·인구·설문) 수집, 정규화 및 피처 생성 | 박하린, 김재원, 안혁진| 05/26 ~ 05/31 |
+| **ML/DL 모델링** | EDA, 베이스라인 구축, Lasso/LGBM 등 모델 학습 및 예측 | 안혁진, 전서연 | 05/31 ~ 06/03 |
+| **웹 F/B** | FastAPI 연동, 코로플레스 지도 및 데이터 시각화, 배포 | 김동민 | 05/31 ~ 06/03 |
+| **공통/PM** | 데일리 스탠드업, 통합 테스트 및 최종 발표 준비 | 전체 | 05/26 ~ 06/04 |
+
+---
+
+## 4. 프로젝트 구조
 
 ```
 📂  root
@@ -67,24 +103,14 @@
 ```
 ---
 
-## 2. 기술 스택
-| | |
-|:-|:-|
-|**Web App & Core**|![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff) ![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff)|
-|**Data Analysis**|![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff) ![Requests](https://img.shields.io/badge/Requests-43B02A?logo=Requests&logoColor=fff)|
-|**Machine Learning**|![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)  ![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=flat) ![Lasso](https://img.shields.io/badge/Lasso-84569B?style=flat) ![Ridge](https://img.shields.io/badge/Ridge-007FFF?style=flat) ![Logistic Regression](https://img.shields.io/badge/LogisticRegression-4C64FF?style=flat)|
-|**Visualization**|![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white) ![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff) ![Seaborn](https://img.shields.io/badge/Seaborn-4EAEAA?logo=python&logoColor=fff)|
-|**Dev Tools**|![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=visualstudiocode&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-ffffff?logo=Jupyter) ![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)|
+## 5. 데이터 파이프라인
 
----
-
-## 3. 데이터 파이프라인
 <img src="image/dataflow.jpg" width="720" height="850">
 <span>자료 : <a href="https://www.notion.so/Feature-370db08ed97780edae09d6fc808a846d?source=copy_link" target='_blank' rel='noreferrer noopener' >Notion - Feature명세서</a></span>
 
 ---
 
-## 4. 요구사항 명세
+## 6. 요구사항 명세
 
 ### FR-1. 데이터 전처리
 | ID | 요구사항 | 담당 | 산출물 |
@@ -124,11 +150,8 @@
 
 ---
 
- ## 5. 수집 데이터 설명
+## 7. 수행 결과
 
----
-
-## 6. 수행 결과
 ### 1) 
 <img src="">
 
@@ -144,7 +167,7 @@
 
 ---
 
-## 7. 회고
+## 8. 회고
 #### 김동민
  - 
 
