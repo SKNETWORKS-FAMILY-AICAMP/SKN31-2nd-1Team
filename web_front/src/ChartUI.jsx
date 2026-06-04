@@ -616,7 +616,7 @@ function LocalPanel({ loc, round }) {
   const [supportTab, setSupportTab] = useState('total');
   
   // 💡 [수정] 지역이나 회차가 바뀌면 무조건 'total(전체)' 탭으로 돌아오도록 수정
-  useEffect(() => setSupportTab('total'), [loc, round]); 
+  useEffect(() => setSupportTab('total'), [round]); 
 
   return (
     <div className="cu-inner">
