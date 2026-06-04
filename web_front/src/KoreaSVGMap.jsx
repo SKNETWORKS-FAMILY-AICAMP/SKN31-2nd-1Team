@@ -42,20 +42,20 @@ export default function KoreaSVGMap({ location, lName, onRegionClick, clicked, c
     const color1 = new THREE.Color(PartyColors[top1.party] || "#888888");
 
     // 2위 데이터가 있다면 색상을 비율만큼 섞습니다.
-    if (top2) {
+    if (top1.rate - top2.rate <= 4.0) {
       const color2 = new THREE.Color(PartyColors[top2.party] || "#888888");
       // 2위가 차지하는 비중 계산 (예: 40.2 / (44.1 + 40.2) ≈ 0.47)
       // * 0.8 정도의 가중치를 곱해주면 1위 정당의 색이 완전히 먹히는 것을 방지할 수 있습니다.
       const mixRatio = (top2.rate / 100) * 0.5; 
       color1.lerp(color2, mixRatio);
     }
-    if (top3) {
-      const color3 = new THREE.Color(PartyColors[top3.party] || "#888888");
-      // 2위가 차지하는 비중 계산 (예: 40.2 / (44.1 + 40.2) ≈ 0.47)
-      // * 0.8 정도의 가중치를 곱해주면 1위 정당의 색이 완전히 먹히는 것을 방지할 수 있습니다.
-      const mixRatio = (top3.rate / 100) * 0.1; 
-      color1.lerp(color3, mixRatio);
-    }
+    // if (top3) {
+    //   const color3 = new THREE.Color(PartyColors[top3.party] || "#888888");
+    //   // 2위가 차지하는 비중 계산 (예: 40.2 / (44.1 + 40.2) ≈ 0.47)
+    //   // * 0.8 정도의 가중치를 곱해주면 1위 정당의 색이 완전히 먹히는 것을 방지할 수 있습니다.
+    //   const mixRatio = (top3.rate / 100) * 0.05; 
+    //   color1.lerp(color3, mixRatio);
+    // }
     // 계산된 최종 색상의 Hex 코드를 반환합니다.
     return color1.getStyle();
   }, [round, lName]); // 회차가 바뀔 때만 재계산
@@ -68,9 +68,9 @@ export default function KoreaSVGMap({ location, lName, onRegionClick, clicked, c
     new THREE.Color("#aaccff"),
     new THREE.Color("#88b7ff")] :
     [
-    new THREE.Color(baseColorHex).offsetHSL(0, -0.2, 0), 
-    new THREE.Color(baseColorHex).offsetHSL(0, 0.15, 0.2), // Hover
-    new THREE.Color(baseColorHex).offsetHSL(0, 0.5, 0.2)  // Click
+    new THREE.Color(baseColorHex).offsetHSL(0, 0.2, 0), 
+    new THREE.Color(baseColorHex).offsetHSL(0, 0.35, 0.2), // Hover
+    new THREE.Color(baseColorHex).offsetHSL(0, 0.25, 0.2)  // Click
   ], [baseColorHex]);
 
 
