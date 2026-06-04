@@ -58,7 +58,7 @@
 ---
 
 ## 2. 기술 스택
-| | |
+| Layer | Technology  |
 |:-|:-|
 |**Web App & Core**|![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff) ![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff)|
 |**Data Analysis**|![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-4DABCF?logo=numpy&logoColor=fff) ![Requests](https://img.shields.io/badge/Requests-43B02A?logo=Requests&logoColor=fff)|
