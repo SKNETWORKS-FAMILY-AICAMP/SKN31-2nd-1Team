@@ -154,6 +154,8 @@
 
 ## 7. 수행 결과
 
+[배포 링크](https://voting-dashboard-front.vercel.app/)
+
 ### 1) 메인페이지
 <img src="image/메인페이지.png">
 
