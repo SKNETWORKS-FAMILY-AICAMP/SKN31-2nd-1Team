@@ -80,8 +80,6 @@
 
 <span>자료 : <a href="https://docs.google.com/spreadsheets/d/180tRAA2pfOSqnx47854IKnDHFj3Zfdz4/edit?usp=sharing&ouid=102065251248098778885&rtpof=true&sd=true" target='_blank' rel='noreferrer noopener' >구글 - WBS</a></span>
 
-
-
 ---
 
 ## 4. 프로젝트 구조
@@ -156,18 +154,25 @@
 
 ## 7. 수행 결과
 
-### 1) 
-<img src="">
+### 1) 메인페이지
+<img src="image/메인페이지.png">
 
-### 2) 
-<img src="">
+### 2) 기권율
+<img src="image/전회차대비기권율.png">
+<img src="image/연령대기권율.png">
 
-### 3)
-<img src="">
+### 3) 연령대 이탈 지표
+<img src="image/연령대기권의향.png">
+<img src="image/연령대기권의식지표.png">
 
-### 4) 
+### 5) 9회 전국 예측
 <img src="">
+<img src="image/9회전국예측.png">
 
+### 6) 여론조사
+<img src="">
+<img src="image/여론조사1.png">
+<img src="image/여론조사2.png">
 
 ---
 
