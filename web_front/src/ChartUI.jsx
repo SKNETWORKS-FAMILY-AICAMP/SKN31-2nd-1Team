@@ -139,7 +139,10 @@ function SupportSection({ region, round, setSupportTab, supportTab }) {
         {data && (
           <>
             <div className="cu-tab-row">
-              {[{ key: 'total', label: '전체' }, { key: 'gender', label: '성별' }, { key: 'age', label: '연령별' }].map(t => (
+              {[
+                { key: 'total', label: '전체' }, 
+                ...(round === '9회' ? [{ key: 'gender', label: '성별' }, { key: 'age', label: '연령별' }] : [])
+              ].map(t => (
                 <button key={t.key} className={`cu-tab-btn${supportTab === t.key ? ' active' : ''}`} onClick={() => setSupportTab(t.key)}>{t.label}</button>
               ))}
             </div>
@@ -611,16 +614,14 @@ function HouseEffectSection() {
 
 function LocalPanel({ loc, round }) {
   const [supportTab, setSupportTab] = useState('total');
-  // 회차나 지역이 바뀌면 탭 초기화
-  useEffect(() => setSupportTab('total'), []); 
+  
+  // 💡 [수정] 지역이나 회차가 바뀌면 무조건 'total(전체)' 탭으로 돌아오도록 수정
+  useEffect(() => setSupportTab('total'), [loc, round]); 
 
   return (
     <div className="cu-inner">
       <CompetitionSection region={loc} round={round} />
-      
-      {/* 💡 기획 의도에 맞게 이탈율 요약 카드를 최상단에 배치 */}
       <LocalTurnoutSection region={loc} round={round} />
-      
       <div className="cu-divider" />
       <SupportSection region={loc} round={round} setSupportTab={setSupportTab} supportTab={supportTab} />
       <PollTrendSection region={loc} round={round} />
