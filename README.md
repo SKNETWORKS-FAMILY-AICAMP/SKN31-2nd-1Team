@@ -78,6 +78,9 @@
 | **웹 F/B** | FastAPI 연동, 코로플레스 지도 및 데이터 시각화, 배포 | 김동민 | 05/31 ~ 06/03 |
 | **공통/PM** | 데일리 스탠드업, 통합 테스트 및 최종 발표 준비 | 전체 | 05/26 ~ 06/04 |
 
+자료 : https://docs.google.com/spreadsheets/d/180tRAA2pfOSqnx47854IKnDHFj3Zfdz4/edit?usp=sharing&ouid=102065251248098778885&rtpof=true&sd=true
+
+
 ---
 
 ## 4. 프로젝트 구조
