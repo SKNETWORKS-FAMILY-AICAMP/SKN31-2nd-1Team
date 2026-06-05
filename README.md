@@ -139,10 +139,11 @@
 ### FR-3. 웹 대시보드
 | ID | 요구사항 | 담당 | 산출물 |
 |---|---|---|---|
-| W01 | 시군구별 기권율 React-rechart lib 지도 구현 | 동민 | 지도 컴포넌트 |
-| W02 | 기권율 49.5% 컷오프 기준 고위험 지역 경고 팝업 | 동민 | 경고 팝업 컴포넌트 |
-| W03 | 광역시단체장 당선 예측, 경합 지역 chart 구현 | 동민 | 바차트 컴포넌트 |
-| W04 | 배포 | 동민 | 배포 URL |
+| W01 | 시군구별 기권율 React R3F 지도 구현 | 동민 | App.jsx, KoreaMap.jsx, KoreaSVGMap.jsx |
+| W02 | 선거 데이터 송신 FastAPI 서버 구현 | 동민 | main.py |
+| W03 | 광역시단체장 당선 예측, 경합 지역 chart 구현 | 동민 | ChartUI.jsx |
+| W04 | 배포 | 동민 | [배포 URL](https://voting-dashboard-front.vercel.app/) |
+| W05 | 사용 매뉴얼 작성 | 동민 | [사용매뉴얼.pdf](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN31-2nd-1Team/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EC%82%AC%EC%9A%A9%EB%A7%A4%EB%89%B4%EC%96%BC.pdf) |
 
 ### NFR. 비기능 요구사항
 - **정확도** : 기권율 예측 RMSE ≤ 3.0%p, R² ≥ 0.70
