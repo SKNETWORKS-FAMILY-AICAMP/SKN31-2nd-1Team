@@ -7,5 +7,5 @@ ML/DL 팀용 작업 공간입니다.
 하위 폴더 구조는 다음과 같습니다.
 
 📂 2. DL<br>
-├ 📂 1. notebooks             # 실험용 jupyter notebook 파일<br>
+├ 📄 1. Winner.ipynb          # 딥러닝 노트북 파일<br>
 └ 📂 2. models                # 저장된 모델<br>
